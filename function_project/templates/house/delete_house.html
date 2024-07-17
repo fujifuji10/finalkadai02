@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>物件削除画面</h3>
+<form method='POST'>
+{% csrf_token %}
+{{ delete_house_form.as_p }}
+<input type='submit' value='物件を削除する'>
+</form>
+{% endblock %}
