@@ -7,7 +7,6 @@ from django.dispatch import receiver
 from uuid import uuid4
 from datetime import datetime, timedelta
 from django.contrib.auth.models import UserManager
-from django.urls import reverse_lazy
 
 
 class UserManager(BaseUserManager):
