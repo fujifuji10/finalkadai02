@@ -4,7 +4,7 @@ from . import views
 app_name = 'accounts'
 
 urlpatterns = [
-  path('home', views.home, name='home'),
+  path('home/', views.home, name='home'),
   path('regist', views.regist, name='regist'),
   path('activate_user/<uuid:token>', views.activate_user, name='activate_user'), #<uuid:token>=uuid型のtokenを発行すると言う意味
   path('user_login', views.user_login, name='user_login'),
