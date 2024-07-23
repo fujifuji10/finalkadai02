@@ -21,7 +21,7 @@
   {% for housing in object_list %}
     <tr>
       <td>{{ forloop.counter }}</td>
-      <td><a href='{% url 'house:detail_house' housing_id=Housing.id %}'>{{ housing.name }}</a></td>
+      <td><a href='{% url 'house:detail_house' housing.pk %}'>{{ housing.name }}</a></td>
       <td>{{ housing.address }}</td>
       <td>{{ housing.size }}</td>
       <td>{{ housing.price }}</td>

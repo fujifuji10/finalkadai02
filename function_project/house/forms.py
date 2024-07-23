@@ -1,6 +1,7 @@
 from django import forms
 from .models import Housing, HouseComments
 from django.contrib.auth.password_validation import validate_password
+from accounts.models import Users
 
 class RegistHouseForm(forms.ModelForm):
   name = forms.CharField(label='物件名')
